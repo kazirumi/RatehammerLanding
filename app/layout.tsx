@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Inter,Poppins } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Top from "@/component/navigation/Top";
+import Top from "@/components/Navigation/Top";
 import Image from "next/image";
+import Footer from "@/components/Navigation/Footer";
 
-
-const inter = Poppins({ 
-                        subsets: ["latin"] ,
-                        weight:['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-                        variable:'--font-poppins'
-                      });
+const inter = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+});
 
 export const metadata: Metadata = {
   title: "RateHammer",
@@ -23,11 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans  relative bg-slate-400` }>
-         {/* <Top/> */}
-    
+      <body className={`${inter.variable} font-sans  relative bg-slate-400`}>
+        <Top />
         {children}
-        </body>
+        <Footer/>
+      </body>
     </html>
   );
 }
