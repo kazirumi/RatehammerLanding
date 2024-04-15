@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config: Config = {
   content: [
@@ -7,6 +8,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'xs': '320px',
+      ...defaultTheme.screens,
+    },
     extend: {
       colors:{
         "brand-purple-100":"#EFE3FF",
@@ -21,7 +26,8 @@ const config: Config = {
           "contact_us_bg":"url('../public/assets/images/home/contact_us_bg.webp')"
       },
       fontFamily:{
-        sans: ['var(--font-poppins)']
+        sans: ['var(--font-poppins)'],
+        'century-gothic': ['century-gothic'],
       }
     },
   },

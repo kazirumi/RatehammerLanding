@@ -14,7 +14,7 @@ interface props{
 
 const TextAreaInput = ({label,placeholder,name,required=false,error,errorMsg,extraClasses,register}:props) => {
   return (
-    <div className={twMerge("flex flex-col gap-2 ", (extraClasses ? extraClasses:" ")) }>
+    <div className={twMerge(" relative flex flex-col font-century-gothic gap-2 ", (extraClasses && extraClasses)) }>
       <label htmlFor={name}>
         {label} {required && (<span className="text-red-600">&nbsp;*</span>)}
       </label>
@@ -26,7 +26,7 @@ const TextAreaInput = ({label,placeholder,name,required=false,error,errorMsg,ext
                   }
         placeholder={placeholder}
       ></textarea>
-      {errorMsg && (<span className="text-xs text-red-500 ml-4">{errorMsg}</span>)}
+      {errorMsg && (<span className="absolute -bottom-5 text-xs text-red-500 ml-4">{errorMsg}</span>)}
 
     </div>
   );

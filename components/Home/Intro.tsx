@@ -4,20 +4,20 @@ import React from "react";
 const Intro = () => {
   return (
     <section className="bg-bg_hero ">
-        <div className="container mx-auto flex flex-col gap-8 justify-center pt-[305px] pb-[218px] px-4 text-white ">
-          <div className="flex flex-col gap-6 w-[1248px]">
-            <p className="text-5xl font-bold w-[992px] leading-[68px] ">
+        <div className="container mx-auto flex flex-col gap-3 lg:gap-5 md:gap-6 xl:gap-8 justify-center pt-[88px] 2xl:pt-[305px] xl:pt-[228px] lg:pt-[176px] md:pt-[120px] sm:pt-[104px] pb-6 2xl:pb-[218px] xl:pb-[140px] lg:pb-[88px] md:pb-[48px] sm:pb-[32px] px-3 2xl:px-4 xl:px-8  sm:px-11 text-white ">
+          <div className="flex flex-col gap-6 2xl:w-[1248px]">
+            <p className="text-2xl xl:text-5xl md:text-4xl sm:text-3xl font-bold 2xl:w-[992px] xl:leading-[68px] md:leading-[52px] sm:leading-[36px] leading-8 ">
               RateHammer is a Cutting-edge Smart Broker Platform
             </p>    
-            <p className="text-brand-purple-100 text-2xl leading-9">
+            <p className="text-brand-purple-100 text-base xl:text-2xl md:text-xl sm:text-lg  font-[400px] font-century-gothic leading-6 xl:leading-9 md:leading-8 sm:leading-[30px]">
               Works with partner Mobile Operators and Super Apps allowing them
               to offer their customers the ultimate access point to a panel of
               credit and insurance suppliers.
             </p>
           </div>
 
-          <div className="w-[1248px]">
-            <p className="text-lg leading-[30px]">
+          <div className="2xl:w-[1248px]">
+            <p className=" text-[14px] xl:text-lg sm:text-base font-century-gothic  leading-5 xl:leading-[30px] md:leading-6 font-[400px]">
               RateHammer provides a highly optimized and simple application
               process. RateHammer also offers a totally unique Dynamic
               Eligibility Universe so consumers can truly explore their
