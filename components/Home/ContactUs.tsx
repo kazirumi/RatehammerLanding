@@ -155,6 +155,7 @@ const ContactUs = () => {
                     width=" lg:w-[192px] w-[164px] "
                     height=" lg:h-[56px] h-[48px] "
                     loading={submitting}
+                    disabled={submitting}
                   />
                   <ReCAPTCHA 
                   sitekey={process.env.NEXT_PUBLIC_RECAPCHA_SITE_KEY as string}
