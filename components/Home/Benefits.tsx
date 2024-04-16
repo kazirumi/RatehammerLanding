@@ -1,5 +1,6 @@
 import React from "react";
 import ImageComponent from "../Common/ImageComponent";
+import Link from "next/link";
 
 function Benefits() {
   return (
@@ -27,7 +28,7 @@ function Benefits() {
             user base.
           </p>
           <p className="text-base xl:text-xl sm:text-lg xl:leading-[32px] sm:leading-[30px] leading-[24px] font-[400px] text-slate-900 font-century-gothic">
-          more details about our solution please <span className="ml-2 underline cursor-pointer text-brand-purple-500">click here</span>
+          more details about our solution please    <Link href="#contact-us"><span className="ml-2 underline cursor-pointer text-brand-purple-500">click here</span></Link>
           </p>
         </div>
       </div>
